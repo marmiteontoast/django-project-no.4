@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Blog About from Templates</h1>
-    <p>This is my about page</p>
-</body>
-</html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container" style="background: white; padding: 20px; margin-top: 10px; border-radius: 20px;">
+        <h1>blog About</h1>
+    </div>
+
+{% endblock content %}
