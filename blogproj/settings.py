@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     # own
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
