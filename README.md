@@ -1,108 +1,178 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">BlogProj</h1>
 
-Welcome mark john,
+[You can view the live project here.](https://blogproj-project-4.herokuapp.com/login/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is a blog site designed for people of all ages and backgrounds to come together and talk about coding
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<h2 align="center"><img src="assets/images/iamresponsive_01_img.png"></h2>
 
-## Gitpod Reminders
+ # User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Stories 
 
-`python3 -m http.server`
+- As a site user i can view a paginated list of posts so that easily select a post to view
+- As a site user I can view a list of posts so that I can select one to read 
+- As a site user I can click on a post so that I can read the whole text
+- As a site user/admin I can view comments on indivdual post so that I  can read the conversation
+- As a site user I can register an account so that I can comment on posts
+- As a site admin I can create, read, update and delete posts so that I can manage my blog content
+- As a site admin I can creae draft posts so that I can finish writing the content later
+- As a site admin I can approve or disaprove comments so that I can filter out objectionable comments
 
-A blue button should appear to click: _Make Public_,
+# Features
 
-Another blue button should appear to click: _Open Browser_.
+## Navigation
+- on the login page there is the "Login" and "Register" buttons at the top of the page
+<h2><img src="assets/images/login_nav_img.png"></h2>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- but once signed in to a user account those buttions will change to "Home", "About", "Create Post", "Profile", and "Logout"
+<h2><img src="assets/images/home_page_nav_img.png"></h2>
 
-A blue button should appear to click: _Make Public_,
+## Home Page
+- At the home page you can see all the post from all the users in a paginated list. the top post being the most recent. 
+- The users profile pic is also rendered on the left side of the post so to better identify who posted it
 
-Another blue button should appear to click: _Open Browser_.
+<h2><img src="assets/images/home_page_posts_img.png"></h2>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Profile Page
 
-To log into the Heroku toolbelt CLI:
+- the user has a page show the user's profile image as well as their email address 
+- the user has access to the various social media links
+- at the bottom of that there is an update button where you can update your contact information and upload a profile image 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<h2><img src="assets/images/profile_page_img.png"></h2>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Update Page
 
-------
+- At the update page the user is able to update thier contact information
+- the user can change their username 
+- they can also change their profile image
 
-## Release History
+<h2><img src="assets/images/profile_update_page_img.png"></h2>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Technologies Used
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Languages Used
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [css](https://en.wikipedia.org/wiki/CSS)
+- [python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Frameworks, Libraries and Programs Used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+1. [Djano:](https://www.djangoproject.com/)
+    - Djano was used to get my website running in a relatively short space of time. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+2. [Bootstrap 4.6:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+    - Bootstrap was used to help with the websites responsiveness.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+3. [Git:](https://git-scm.com/)
+    - Git was used to within the gitpod terminal to Git commit and push to GitHub.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+4. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects after being pushed from Git.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+5. [Heroku:](https://id.heroku.com/login)
+    - Heroku is used to for deployment for backend related projects
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+6. [Cloudinary:](https://cloudinary.com/) 
+    - Cloudinary is used to store the websites static and media content
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Testing 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Lighthouse
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<h2><img src="assets/images/lighthouse_img.png"></h2>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Lighthouse Chrome dev tool was run. results are positive for performance, Accessibility and Best Practices, but SEO was a little low.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Automated Testing 
 
-------
+Automated was not added due to time restraints for the project 
 
-## FAQ about the uptime script
+## Manuel Tests 
 
-**Why have you added this script?**
+- users - users are able to register and login 
+- home page - users are able to see theres and other users posts in the home page in the form of a list
+- profile page - users are able go to their profile page and see there profile image aswell as upload a profile image
+- site admin - admin can manage users and blog posts in the backend. also can update user profiles and information 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## code issues 
+- an error on my part, i felt the need to write a save function for the new image instance aswell as change the size of the image, so the files are not too large. It was this very issue that was preventing "ClourinaryMediaStorage" from working preventing me from deploying my blog site. But after speaking to people far more knowledgable than me I choose to remove it. After that my uploading images to Cloudinary started working fine.
 
-**How will this affect me?**
+<h2><img src="assets/images/save_function_img.PNG"></h2>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- also using 'path' was a major issue as well (cloudinary doesn't like absolute paths) changing it to 'name' solved that problem. but the whole function need re-writing 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<h2><img src="assets/images/absolute_paths_error_img.png"></h2>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+## Unsolved Bugs
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- Currently unable to render a default image when people first register for an user account 
 
-**Can I opt out?**
+# Deployment
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Heroku
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The project was deployed on Heroku using the following steps
 
-**Anything more?**
+1. In heroku create a new app 
+2. click the resource tab locatated at the top of the page, search and add "Heroku Postgres"
+3. in the settings tab, reveal Config Vars and copy "DATABASE_URL"
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### In gitpod:
 
----
+4. Create an envy.py file in the main directory
 
-Happy coding!
+### In envy.py:
+
+5. Import the os library
+6. input os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"
+7. add a secret key os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+
+### In Heroku
+
+8. add secret key to Config Vars SECRET_KEY, “randomSecretKey”
+
+In setting.py: 
+
+9. Reference env.py  
+
+10. Remove the insecure secret key and replace links to the SECRET_KEY variable on Heroku SECRET_KEY = os.environ.get('SECRET_KEY')
+
+11. Comment out the default DataBases Section
+
+12. Add new Databases  DATABASES = {
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+
+13. you'll need to create a Procfile in the main directory, within the file add code web: gunicorn PROJ_NAME.wsgi
+
+# Credits
+
+## Code
+
+- The code came is from [Destiny Franks(Desphixs)](https://www.youtube.com/c/Desphixs) a youtuber and resident of GitHub
+
+- bootstrap4 for its Grid System making the site responsive 
+
+## Media
+
+- all images are either original or taken from google
+
+## Acknowledgements 
+
+- [Destiny Franks(Desphixs)](https://www.youtube.com/c/Desphixs) we correspond via email. nice guy.
+
+
+
+
+
+
+
+
+    
+
+
+

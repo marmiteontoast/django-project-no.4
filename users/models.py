@@ -10,7 +10,7 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    # def resize(self, *args, **kwargs):
+    # def save(self, *args, **kwargs):
     #     img = Image.open(self.image.name)
     #     img.thumbnail((300, 300))
     #     img.save(self.image.name)  
